@@ -1,0 +1,22 @@
+{
+  "name": "paragliding_film_40s",
+  "source": "clips/IMG_3729.MP4",
+  "notes": "40s chill film: full story arc - harness/crew, launch, ridge, low pass, descent, slow-mo turquoise crossing, coastal approach, touchdown. Overlays chosen for this footage.",
+  "shots": [
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 34.0, "end": 40.0, "speed": 1.0, "note": "ground crew settles harness, anticipation" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 44.0, "end": 50.0, "speed": 1.2, "note": "launch lift-off" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 78.0, "end": 84.0, "speed": 1.0, "note": "ridge flight, lake + coastline reveal" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 160.0, "end": 164.0, "speed": 1.0, "note": "low pass over the ridge stairs" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 321.0, "end": 325.0, "speed": 1.0, "note": "big hill descent over jungle" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 346.0, "end": 352.0, "speed": 0.75, "note": "MONEY SHOT: turquoise water crossing, gentle slow-mo" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 368.0, "end": 371.0, "speed": 1.0, "note": "coastal approach, rocky shore" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 386.0, "end": 390.0, "speed": 1.0, "note": "beach touchdown outro" }
+  ],
+  "overlays": [
+    { "kind": "intro", "start": 0, "end": 3.0 },
+    { "kind": "word", "text": "ADRENALINE", "start": 11.15, "end": 14.15 },
+    { "kind": "word", "text": "ELEVATE", "sub": "YOUR THRILLS", "start": 21.15, "end": 24.15 },
+    { "kind": "word", "text": "PARAGLIDING", "sub": "SIRUMA // CAMSUR", "start": 25.15, "end": 28.15 },
+    { "kind": "outro", "start": 37.0, "end": 40.0 }
+  ]
+}

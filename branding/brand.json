@@ -1,0 +1,54 @@
+{
+  "name": "Monitor Gear",
+  "site": "https://www.monitorgear.me",
+  "colors": {
+    "primary_red": "#ff0000",
+    "logo_lime": "#d0e000",
+    "logo_gray": "#706060",
+    "dark_maroon": "#320707",
+    "white": "#ffffff",
+    "black": "#0a0a0a"
+  },
+  "fonts": {
+    "display": "branding/ArchivoBlack-400.ttf",
+    "body": "branding/Sora-600.ttf",
+    "body_light": "branding/Sora-400.ttf",
+    "body_heavy": "branding/Sora-800.ttf"
+  },
+  "logos": {
+    "rectangle": "branding/logo_rectangle.webp",
+    "sticker": "branding/logo_sticker.png"
+  },
+  "taglines": {
+    "intro": "///UNLEASH YOUR SPIRIT",
+    "outro": "UNLEASH YOUR INNER MAVERICK",
+    "alt": [
+      "ELEVATE YOUR THRILLS",
+      "WHERE FEAR MEETS FUN"
+    ],
+    "words": [
+      "ADRENALINE",
+      "CHALLENGES",
+      "ADVENTURE",
+      "EXPLORATION"
+    ]
+  },
+  "social": {
+    "instagram": "@monitorgear",
+    "facebook": "monitorgearsports"
+  },
+  "cta": {
+    "outro_main": "FOLLOW @monitorgear",
+    "outro_sub": "monitorgear.me"
+  },
+  "watermark": {
+    "file": "branding/logo_round.png",
+    "corner": "top-right",
+    "size_px": 150,
+    "opacity": 0.85,
+    "margin_frac": 0.03,
+    "landscape_card_shrink": 0.4,
+    "sponsor_size_px": 150,
+    "sponsor_gap_px": 26
+  }
+}

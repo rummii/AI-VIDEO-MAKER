@@ -1,0 +1,113 @@
+{
+  "name": "jetski_film_60s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4"
+  ],
+  "style": "siruma",
+  "music_start": 88.961,
+  "notes": "intro: flash 2.50s\nglitch: glitch 0.47s\naction: 15.23s @ 452.0s in IMG_3731.MP4\nscenic: 9.68s @ 100.0s in IMG_3731.MP4\nburst1: texture close-up 0.46s from money zone\nburst2: texture close-up 0.28s from money zone\nburst3: texture close-up 0.25s from money zone\naction2: 8.22s @ 316.0s in IMG_3731.MP4\ncalm: 6.48s @ 436.0s in IMG_3731.MP4\nflash: flash 0.15s\nmoney: 11.85s @ 524.1s in IMG_3731.MP4\nscenic2: 4.42s @ 78.8s in IMG_3731.MP4",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.502,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.465,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 452.0,
+      "end": 467.232,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 100.0,
+      "end": 109.683,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "zoom": 2.6,
+      "start": 524.88,
+      "end": 525.344,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "zoom": 2.6,
+      "start": 529.5,
+      "end": 529.78,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "zoom": 2.6,
+      "start": 533.35,
+      "end": 533.6,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 316.0,
+      "end": 324.224,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 436.0,
+      "end": 442.479,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 524.073,
+      "end": 535.927,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3731.MP4",
+      "start": 78.791,
+      "end": 83.209,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.502
+    },
+    {
+      "kind": "word",
+      "text": "ADVENTURE",
+      "start": 44.729,
+      "end": 47.729
+    },
+    {
+      "kind": "outro_url",
+      "start": 55.583,
+      "end": 60.001
+    }
+  ]
+}

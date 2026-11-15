@@ -1,0 +1,28 @@
+# ---- large media: stays local, never versioned ----
+clips/
+footage/*
+!footage/README.txt
+output/
+
+# music audio (metadata library.json IS tracked)
+music/*.mp3
+music/*.wav
+music/*.m4a
+
+# bundled ffmpeg binaries
+tools/ffmpeg/
+
+# generated caches / scratch
+tools/frames/
+tools/overlays/
+tools/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+
+# editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

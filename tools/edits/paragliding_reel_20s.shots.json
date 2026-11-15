@@ -1,0 +1,14 @@
+{
+  "name": "paragliding_reel_20s",
+  "source": "clips/IMG_3729.MP4",
+  "notes": "20s 9:16 reel. Arc: launch hook -> ridge flying -> descent -> slow-mo turquoise money shot on the drop -> coastal approach -> beach touchdown outro.",
+  "shots": [
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 44.0, "end": 47.0, "speed": 1.5, "note": "launch lift-off, grass rushing (hook)" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 78.0, "end": 80.5, "speed": 1.0, "note": "ridge flight, lake + coastline reveal" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 160.0, "end": 162.5, "speed": 1.0, "note": "low ridge pass over the stairs path" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 320.0, "end": 323.0, "speed": 1.0, "note": "big hill descent, full speed" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 346.0, "end": 348.5, "speed": 0.5, "note": "MONEY SHOT: turquoise water crossing in slow-mo, lands on the drop" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 368.0, "end": 371.0, "speed": 1.0, "note": "coastal approach, rocky stairs shoreline" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 388.0, "end": 390.0, "speed": 1.0, "note": "beach touchdown, outro" }
+  ]
+}

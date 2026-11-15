@@ -1,0 +1,17 @@
+{
+  "name": "paragliding_chill_fresh",
+  "source": "clips/IMG_3729.MP4",
+  "notes": "20s chill-house paced fresh cut: long scenic holds, gentle speed, custom branded overlays.",
+  "shots": [
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 44.0, "end": 50.0, "speed": 1.2, "note": "launch, gently quickened" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 78.0, "end": 83.0, "speed": 1.0, "note": "long hold: ridge + lake + coastline" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 344.0, "end": 350.0, "speed": 1.0, "note": "turquoise water crossing, full hold" },
+    { "clip": "C:/Users/ahmad/Documents/Default Project/clips/IMG_3729.MP4", "start": 386.0, "end": 390.0, "speed": 1.0, "note": "beach touchdown" }
+  ],
+  "overlays": [
+    { "kind": "intro", "start": 0, "end": 3.0 },
+    { "kind": "word", "text": "PARAGLIDING", "sub": "SIRUMA // CAMSUR", "start": 5.15, "end": 8.15 },
+    { "kind": "word", "text": "ELEVATE", "sub": "YOUR THRILLS", "start": 10.15, "end": 13.15 },
+    { "kind": "outro", "start": 17.0, "end": 20.0 }
+  ]
+}

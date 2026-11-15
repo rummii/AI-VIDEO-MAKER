@@ -1,0 +1,113 @@
+{
+  "name": "kite_film_60s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4"
+  ],
+  "style": "siruma",
+  "music_start": 22.021,
+  "notes": "intro: flash 2.52s\nglitch: glitch 0.51s\naction: 15.02s @ 90.0s in video_2026-11-15_14-50-09.mp4\nscenic: 9.47s @ 4.0s in video_2026-11-15_14-50-09.mp4\nburst1: texture close-up 0.51s from money zone\nburst2: texture close-up 0.49s from money zone\nburst3: texture close-up 0.25s from money zone\naction2: 8.25s @ 150.0s in video_2026-11-15_14-50-09.mp4\ncalm: 6.50s @ 122.0s in video_2026-11-15_14-50-09.mp4\nflash: flash 0.15s\nmoney: 11.86s @ 2.1s in video_2026-11-15_14-50-09.mp4\nscenic2: 4.47s @ 26.8s in video_2026-11-15_14-50-09.mp4",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.522,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.511,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 90.0,
+      "end": 105.024,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 4.0,
+      "end": 13.473,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "zoom": 2.6,
+      "start": 35.0,
+      "end": 35.511,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "zoom": 2.6,
+      "start": 37.6,
+      "end": 38.088,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "zoom": 2.6,
+      "start": 41.0,
+      "end": 41.25,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 150.0,
+      "end": 158.248,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 122.0,
+      "end": 128.502,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 34.5,
+      "end": 46.356,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\video_2026-11-15_14-50-09.mp4",
+      "start": 26.767,
+      "end": 31.233,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.522
+    },
+    {
+      "kind": "word",
+      "text": "ADVENTURE",
+      "start": 44.679,
+      "end": 47.679
+    },
+    {
+      "kind": "outro_url",
+      "start": 55.534,
+      "end": 60.001
+    }
+  ]
+}

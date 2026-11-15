@@ -1,0 +1,112 @@
+{
+  "name": "siruma_style_test",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4"
+  ],
+  "style": "siruma",
+  "notes": "intro: flash 2.00s\nglitch: glitch 0.39s\naction: 10.03s @ 10.0s in IMG_3729.MP4\nscenic: 5.99s @ 110.0s in IMG_3729.MP4\nburst1: texture close-up 0.39s from money zone\nburst2: texture close-up 0.42s from money zone\nburst3: texture close-up 0.25s from money zone\naction2: 4.95s @ 23.5s in IMG_3729.MP4\ncalm: 4.20s @ 420.9s in IMG_3729.MP4\nflash: flash 0.15s\nmoney: 7.44s @ 52.3s in IMG_3729.MP4\nscenic2: 3.77s @ 229.1s in IMG_3729.MP4",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.004,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.394,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 10.0,
+      "end": 20.031,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 110.004,
+      "end": 115.996,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "zoom": 2.6,
+      "start": 50.88,
+      "end": 51.275,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "zoom": 2.6,
+      "start": 55.5,
+      "end": 55.918,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "zoom": 2.6,
+      "start": 59.35,
+      "end": 59.6,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 23.525,
+      "end": 28.475,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 420.898,
+      "end": 425.102,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 52.278,
+      "end": 59.722,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\clips\\IMG_3729.MP4",
+      "start": 229.115,
+      "end": 232.885,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.004
+    },
+    {
+      "kind": "word",
+      "text": "ADRENALINE",
+      "start": 29.787,
+      "end": 32.787
+    },
+    {
+      "kind": "outro_url",
+      "start": 36.23,
+      "end": 40.002
+    }
+  ]
+}
