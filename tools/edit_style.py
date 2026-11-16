@@ -331,4 +331,5 @@ def build_plan(clip_paths, track_name, track, D, seed=None):
     return {"shots": shots, "overlays": overlays,
             "notes": {"structure": notes, "music_start": round(music_start, 3),
                       "bpm": track["bpm"], "style": "siruma",
+                      "money_window": [round(snapped[money_i], 3), round(snapped[money_i + 1], 3)],
                       "sections_used": window_secs}}

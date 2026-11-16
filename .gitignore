@@ -16,6 +16,7 @@ tools/ffmpeg/
 tools/frames/
 tools/overlays/
 tools/__pycache__/
+assets/fx/
 __pycache__/
 *.pyc
 *.pyo
