@@ -45,40 +45,6 @@ Dump any number of clips into `footage/`, then:
 - Same Siruma structure, branding, beat-snapping and 4K support as everything else
 - `--plan-only` writes the shot list JSON for hand-tuning
 
-## Visual FX (new)
-
-Two FX sources, both composited as RGBA overlays baked into the render:
-
-**1. Local procedural FX (free, offline)** — `tools/gen_fx.py`
-
-    python tools\gen_fx.py make            # generate all four
-
-| FX | Look |
-|----|------|
-| `embers` | Rising sparks/embers (alpha = glow) |
-| `flare` | Diagonal lens flare sweep |
-| `light_leak` | Warm analog light leak sweeping the frame |
-| `speedlines` | Radial speed lines burst |
-
-All render to `assets/fx/*.mov` (transparent, 1920x1080, 6s).
-
-**2. Wan-AI/Wan2.1-T2V-14B (AI-generated, needs API key)** — Replicate-hosted
-
-    set REPLICATE_API_TOKEN=r8_...     # one-time; from replicate.com
-    python tools\gen_fx.py wan "a slow-motion burst of sparks and embers" \
-        --size 720p --out wan_sparks.mp4
-
-- Models: `wavespeedai/wan-2.1-t2v-480p` (default, ~$0.50/5s) or `-720p`
-- Wan has **no local-GPU install** on this machine (14B params, ~65GB VRAM) — use the API
-- Generated clips land in `assets/fx/`; add them to any shots JSON the same way
-
-**How FX get used**
-- `auto`/`stitch` insert **embers over the start of the money shot** by default
-  (that's where the drop lands); disable with `--nofx`
-- To use a specific FX/AI clip, add to the shots JSON:
-  `"fx": [{"file": "assets/fx/flare.mov", "start": 28.5, "end": 33.0, "opacity": 0.9}]`
-- FX sit **under** the watermark but **over** the footage — branding stays on top
-
 ## Branding (automatic)
 
 Every render pulls from `branding/brand.json` (extracted from monitorgear.me):

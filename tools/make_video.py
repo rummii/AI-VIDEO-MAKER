@@ -125,8 +125,7 @@ def choose_music_segment(track, length, hit_drop_at=0.45):
     return round(start, 3)
 
 # ---------------------------------------------------------------- build
-def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=0.8,
-                 fx_list=None):
+def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=0.8):
     """Assemble trim/speed/scale/color filters + concat + brand overlays.
     Shot kinds: "clip" (default; file input), "texture" (file input, zoomed
     crop for B-roll bridges), "black" (flash card), "noise" (glitch static).
@@ -171,29 +170,12 @@ def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=
     parts.append(concat)
     parts.append(a)
 
-    # ---- FX inserts (embers/flares/light-leaks; RGBA overlays) ---------
+    # ---- brand overlays ------------------------------------------------
     extra_inputs = []
     current = "[vcat]"
-    J = len(fx_list) if fx_list else 0
-    if fx_list:
-        for j, fx in enumerate(fx_list):
-            fx_idx = music_idx + 1 + j
-            extra_inputs += ["-stream_loop", "-1", "-i", fx["file"]]
-            op = float(fx.get("opacity", 0.85))
-            s, e = fx["start"], fx["end"]
-            chain = (f"[{fx_idx}:v]scale={out_w}:{out_h}:force_original_aspect_ratio=increase,"
-                     f"crop={out_w}:{out_h},fps={fps},format=rgba,"
-                     f"colorchannelmixer=aa={op:.2f}[fxv{j}]")
-            ovf = (f"{current}[fxv{j}]overlay=0:0:eof_action=repeat:"
-                   f"enable='between(t,{s:.3f},{e:.3f})'[fxw{j}]")
-            parts.append(chain)
-            parts.append(ovf)
-            current = f"[fxw{j}]"
-
-    # ---- brand overlays ------------------------------------------------
     if overlays:
         for k, ov in enumerate(overlays):
-            img_idx = music_idx + 1 + J + k
+            img_idx = music_idx + 1 + k
             extra_inputs += ["-loop", "1", "-t", f"{total:.3f}", "-i", ov["png"]]
             if ov["mode"] == "watermark":
                 chain = (f"[{img_idx}:v]format=rgba[ov{k}]")
@@ -280,24 +262,8 @@ def cmd_build(args):
             overlays = brand_overlays.build_overlay_plan(
                 project, shots, total, w, h, shots_doc.get("overlays"),
                 sponsors=sponsor_files)
-        # FX inserts: shots.json "fx" -> [{file, start, end, opacity?}]
-        fx_list = [] if getattr(args, "nofx", False) else shots_doc.get("fx", [])
-        resolved = []
-        for fx in fx_list:
-            f = fx["file"]
-            if not os.path.isabs(f):
-                f = os.path.join(ROOT, f)
-            if not os.path.exists(f):
-                print(f"fx missing (skipped): {f}")
-                continue
-            fx = dict(fx, file=f, start=float(fx.get("start", 0.0)),
-                      end=float(fx.get("end", total)))
-            resolved.append(fx)
-        fx_list = resolved
-        if fx_list:
-            print(f"fx inserts: {len(fx_list)}")
         filt, extra_inputs, total, vfinal = build_filter(
-            shots, w, h, fps, music_start, overlays, fx_list=fx_list)
+            shots, w, h, fps, music_start, overlays)
         inputs += extra_inputs
         out = args.out.replace(":16:9", "").replace(":9:16", "") or out_base
         outpath = os.path.join(ROOT, "output", f"{out_base}_{suffix}.mp4")
@@ -316,20 +282,6 @@ def cmd_build(args):
     return 0
 
 # ---------------------------------------------------------------- auto (Siruma style)
-def _maybe_fx(doc, plan):
-    """Default FX insert: ember particles over the start of the money shot.
-    Skippable with --nofx; adjust window/opacity in the shots JSON."""
-    mw = plan.get("notes", {}).get("money_window")
-    embers = os.path.join(ROOT, "assets", "fx", "embers.mov")
-    if mw and os.path.exists(embers):
-        m0 = mw[0] + 0.4
-        m1 = min(mw[1], m0 + 5.0)
-        doc["fx"] = [{"file": "assets/fx/embers.mov",
-                      "start": round(m0, 3), "end": round(m1, 3),
-                      "opacity": 0.8}]
-        print(f"fx inserts: embers on the money shot ({m0:.1f}-{m1:.1f}s)")
-
-
 def cmd_auto(args):
     import edit_style
     D = args.duration
@@ -352,8 +304,6 @@ def cmd_auto(args):
         "shots": plan["shots"],
         "overlays": plan["overlays"],
     }
-    if not getattr(args, "nofx", False):
-        _maybe_fx(doc, plan)
     os.makedirs(EDITS, exist_ok=True)
     jpath = os.path.join(EDITS, f"{doc['name']}.shots.json")
     with open(jpath, "w", encoding="utf-8") as f:
@@ -416,8 +366,6 @@ def cmd_stitch(args):
         "shots": plan["shots"],
         "overlays": plan["overlays"],
     }
-    if not getattr(args, "nofx", False):
-        _maybe_fx(doc, plan)
     os.makedirs(EDITS, exist_ok=True)
     jpath = os.path.join(EDITS, f"{doc['name']}.shots.json")
     with open(jpath, "w", encoding="utf-8") as f:
@@ -442,7 +390,6 @@ def main():
     b.add_argument("--out", required=True)
     b.add_argument("--nobrand", action="store_true")
     b.add_argument("--sponsors", default=None, help="'auto' or comma-separated logo paths")
-    b.add_argument("--nofx", action="store_true", help="ignore fx entries in the shot list")
     a = sub.add_parser("auto")
     a.add_argument("--clip", required=True, help="source clip(s), comma-separated")
     a.add_argument("--music", default=None)
@@ -453,7 +400,6 @@ def main():
     a.add_argument("--plan-only", action="store_true")
     a.add_argument("--nobrand", action="store_true")
     a.add_argument("--sponsors", default=None, help="'auto' or comma-separated logo paths")
-    a.add_argument("--nofx", action="store_true", help="skip automatic FX inserts")
     s = sub.add_parser("stitch", help="auto-stitch every clip in a folder into one edit")
     s.add_argument("--dir", default="footage", help="folder of clips (default: footage)")
     s.add_argument("--music", default=None, help="track name, or omit for auto-pick")
@@ -464,7 +410,6 @@ def main():
     s.add_argument("--plan-only", action="store_true")
     s.add_argument("--nobrand", action="store_true")
     s.add_argument("--sponsors", default=None, help="'auto' or comma-separated logo paths")
-    s.add_argument("--nofx", action="store_true", help="skip automatic FX inserts")
     args = ap.parse_args()
     if args.cmd == "analyze":
         sys.exit(cmd_analyze(args))
