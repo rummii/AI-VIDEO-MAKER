@@ -1,0 +1,122 @@
+{
+  "name": "tandem_stitch_60s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5890.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_12.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_17.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_2.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_23.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_3.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_30.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_38.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_5.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_8.mp4"
+  ],
+  "style": "siruma",
+  "music_start": 49.911,
+  "notes": "intro: flash 2.38s\nglitch: glitch 0.49s\naction: 15.49s @ 0.0s in IMG_5890.MOV\nscenic: 9.20s @ 0.8s in Siruma Tandem - Scene 0_2.mp4\nburst1: texture close-up 0.49s from money zone\nburst2: texture close-up 0.49s from money zone\nburst3: texture close-up 0.46s from money zone\naction2: 8.22s @ 0.0s in Siruma Tandem - Scene 0_12.mp4\ncalm: 6.29s @ 1.0s in Siruma Tandem - Scene 0_17.mp4\nflash: flash 0.15s\nmoney: 11.97s @ 0.0s in Siruma Tandem - Scene 0_30.mp4\nscenic2: 4.38s @ 0.8s in Siruma Tandem - Scene 0_23.mp4",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.38,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.488,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5890.MOV",
+      "start": 0.0,
+      "end": 15.488,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_2.mp4",
+      "start": 0.805,
+      "end": 10.0,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_30.mp4",
+      "zoom": 2.6,
+      "start": 0.88,
+      "end": 1.367,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_30.mp4",
+      "zoom": 2.6,
+      "start": 5.5,
+      "end": 5.988,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_30.mp4",
+      "zoom": 2.6,
+      "start": 9.35,
+      "end": 9.814,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_12.mp4",
+      "start": 0.0,
+      "end": 8.22,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_17.mp4",
+      "start": 1.0,
+      "end": 7.293,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_30.mp4",
+      "start": 0.015,
+      "end": 11.985,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\Siruma Tandem - Scene 0_23.mp4",
+      "start": 0.812,
+      "end": 5.188,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.38
+    },
+    {
+      "kind": "word",
+      "text": "EXPLORATION",
+      "start": 44.653,
+      "end": 47.653
+    },
+    {
+      "kind": "outro_url",
+      "start": 55.624,
+      "end": 59.999
+    }
+  ]
+}

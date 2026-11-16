@@ -28,20 +28,38 @@ LIB = os.path.join(ROOT, "music", "library.json")
 
 # ------------------------------------------------------------ footage scout
 def scout_clip(path):
-    """Sample tiny frames, score motion + colorfulness per 2s bucket."""
+    """Sample tiny frames, score motion + colorfulness per bucket."""
     w, h = 160, 90
-    cmd = [FFMPEG, "-i", path, "-skip_frame", "nokey", "-vf", "fps=0.5,scale=160:90",
+    probe = subprocess.run(
+        [FFMPEG.replace("ffmpeg.exe", "ffprobe.exe"), "-v", "error",
+         "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1", path],
+        capture_output=True, text=True, timeout=120)
+    try:
+        true_dur = float(probe.stdout.strip())
+    except (ValueError, AttributeError):
+        true_dur = 0.0
+    # ~1 frame per 2s for long clips; up to 4fps for short ones
+    fps = min(4.0, max(1.0, 3.0 / max(true_dur, 1.0) * 20)) if true_dur else 1.0
+    cmd = [FFMPEG, "-i", path, "-skip_frame", "nokey", "-vf", f"fps={fps:.3f},scale=160:90",
            "-f", "rawvideo", "-pix_fmt", "bgr24", "-"]
     p = subprocess.run(cmd, capture_output=True, timeout=900)
     n = len(p.stdout) // (w * h * 3)
+    if n < 8:
+        cmd = [FFMPEG, "-i", path, "-skip_frame", "nokey", "-vf", "fps=4,scale=160:90",
+               "-f", "rawvideo", "-pix_fmt", "bgr24", "-"]
+        p = subprocess.run(cmd, capture_output=True, timeout=900)
+        n = len(p.stdout) // (w * h * 3)
+        fps = 4.0
     if n < 8:
         raise RuntimeError(f"not enough frames sampled from {path}")
     arr = np.frombuffer(p.stdout[:n * w * h * 3], np.uint8).reshape(n, h, w, 3).astype(np.float32)
     luma = arr[..., 0] * 0.114 + arr[..., 1] * 0.587 + arr[..., 2] * 0.299
     motion = np.concatenate([[0], np.abs(np.diff(luma, axis=0)).mean(axis=(1, 2))])
     colorf = (arr.max(axis=3) - arr.min(axis=3)).mean(axis=(1, 2))
-    dur = n / 0.5
-    return {"path": path, "duration": dur, "t": np.arange(n) * 2.0,
+    step = 1.0 / fps
+    dur = n * step
+    dur = true_dur if true_dur > 0 else dur
+    return {"path": path, "duration": dur, "t": np.arange(n) * step, "step": step,
             "motion": motion, "color": colorf}
 
 
@@ -57,7 +75,7 @@ def _z(x):
 
 def pick_windows(sc):
     """Role windows from one scout: money/action/scenic/calm, each (start,end)."""
-    dt = 2.0
+    dt = sc.get("step", 2.0)
     n = len(sc["t"])
     mo, co = _z(_smooth(sc["motion"], 2)), _z(_smooth(sc["color"], 2))
     edge = max(2, int(2 / dt))

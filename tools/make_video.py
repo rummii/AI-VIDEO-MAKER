@@ -314,6 +314,9 @@ def cmd_auto(args):
     if args.plan_only:
         return 0
     args.shots = jpath
+    # pin the EXACT track the plan was scored against — otherwise the build
+    # would re-roll its own random pick and break every beat snap
+    args.music = track_name
     return cmd_build(args)
 
 # ---------------------------------------------------------------- stitch (footage folder)
@@ -376,6 +379,7 @@ def cmd_stitch(args):
     if args.plan_only:
         return 0
     args.shots = jpath
+    args.music = track_name
     return cmd_build(args)
 
 # ---------------------------------------------------------------- cli
