@@ -1,0 +1,118 @@
+{
+  "name": "island_days_30s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5497.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5501.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5513.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5547.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5747.MOV"
+  ],
+  "style": "siruma",
+  "music_start": 12.269,
+  "notes": "intro: flash 1.66s\nglitch: glitch 0.46s\naction: 7.20s @ 0.4s in IMG_5501.MOV\nscenic: 4.55s @ 2.7s in IMG_5547.MOV\nburst1: texture close-up 0.42s from money zone\nburst2: texture close-up 0.28s from money zone\nburst3: texture close-up 0.25s from money zone\naction2: 3.60s @ 2.2s in IMG_5547.MOV\ncalm: 3.30s @ 2.5s in IMG_5497.MOV\nflash: flash 0.15s\nmoney: 5.24s @ 8.4s in IMG_5736.MOV\nscenic2: 2.89s @ 2.6s in IMG_5501.MOV",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 1.663,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.464,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5501.MOV",
+      "start": 0.401,
+      "end": 7.599,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5547.MOV",
+      "start": 2.724,
+      "end": 7.276,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
+      "zoom": 2.6,
+      "start": 5.88,
+      "end": 6.298,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
+      "zoom": 2.6,
+      "start": 10.5,
+      "end": 10.78,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
+      "zoom": 2.6,
+      "start": 14.35,
+      "end": 14.6,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5547.MOV",
+      "start": 2.198,
+      "end": 5.802,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5497.MOV",
+      "start": 2.453,
+      "end": 5.75,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
+      "start": 8.382,
+      "end": 13.618,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5501.MOV",
+      "start": 2.556,
+      "end": 5.444,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 1.663
+    },
+    {
+      "kind": "word",
+      "text": "ADVENTURE",
+      "start": 22.875,
+      "end": 25.875
+    },
+    {
+      "kind": "outro_url",
+      "start": 27.112,
+      "end": 30.0
+    }
+  ]
+}

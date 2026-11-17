@@ -45,12 +45,12 @@ def scout_clip(path):
     p = subprocess.run(cmd, capture_output=True, timeout=900)
     n = len(p.stdout) // (w * h * 3)
     if n < 8:
-        cmd = [FFMPEG, "-i", path, "-skip_frame", "nokey", "-vf", "fps=4,scale=160:90",
+        cmd = [FFMPEG, "-i", path, "-skip_frame", "nokey", "-vf", "fps=6,scale=160:90",
                "-f", "rawvideo", "-pix_fmt", "bgr24", "-"]
         p = subprocess.run(cmd, capture_output=True, timeout=900)
         n = len(p.stdout) // (w * h * 3)
-        fps = 4.0
-    if n < 8:
+        fps = 6.0
+    if n < 4:
         raise RuntimeError(f"not enough frames sampled from {path}")
     arr = np.frombuffer(p.stdout[:n * w * h * 3], np.uint8).reshape(n, h, w, 3).astype(np.float32)
     luma = arr[..., 0] * 0.114 + arr[..., 1] * 0.587 + arr[..., 2] * 0.299
@@ -78,7 +78,8 @@ def pick_windows(sc):
     dt = sc.get("step", 2.0)
     n = len(sc["t"])
     mo, co = _z(_smooth(sc["motion"], 2)), _z(_smooth(sc["color"], 2))
-    edge = max(2, int(2 / dt))
+    edge = max(2, int(2.0 / dt))
+    edge = min(edge, max(1, len(sc["t"]) // 4))   # never wipe tiny clips
     free = np.ones(n, bool)
     free[:edge] = free[-edge:] = False
 
