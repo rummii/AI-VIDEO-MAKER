@@ -92,6 +92,16 @@ All Mixkit Stock Music Free License — commercial OK, no attribution required.
 | Chillax | Francisco Alvear | — | laid-back |
 | Time Out | Ahjay Stelino | 60.1 | very slow, ambient |
 
+## Pixabay
+
+| Track | Artist | BPM | License |
+|---|---|---|---|
+| The Realest Thought (Emotional House & Deep House) | openmindaudio | 117.5 | Pixabay Content License — commercial use, no attribution required |
+
+The Pixabay Content License allows free commercial use without attribution
+(just don't resell the raw file standalone, don't use embedded brands/trademarks
+commercially). File: `music/Pixabay - openmindaudio - The Realest Thought.mp3`.
+
 Notes:
 - CC0 = no attribution required, but crediting the artist is good practice
   if you ever want to list it in a description.
