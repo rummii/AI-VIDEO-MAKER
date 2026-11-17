@@ -319,11 +319,20 @@ def build_plan(clip_paths, track_name, track, D, seed=None):
             rw = (scouts[0], (0.0, scouts[0]["duration"]))
         sc, w = rw
         wl = w[1] - w[0]
-        st = w[0] + max(0.0, (wl - disp) / 2)
-        st = min(st, max(sc["duration"] - disp, 0))
-        shots.append({"clip": sc["path"], "start": round(st, 3), "end": round(st + disp, 3),
-                      "speed": 1.0, "note": s["role"]})
-        notes.append(f"{s['role']}: {disp:.2f}s @ {st:.1f}s in {os.path.basename(sc['path'])}")
+        if wl >= disp:
+            src_len, speed = disp, 1.0
+            st = w[0] + max(0.0, (wl - disp) / 2)
+        else:
+            # window shorter than the display slot: slow it down so the
+            # concat doesn't come out short
+            src_len = wl
+            speed = max(0.25, wl / disp)
+            st = w[0]
+        st = max(0.0, min(st, max(sc["duration"] - src_len, 0.0)))
+        shots.append({"clip": sc["path"], "start": round(st, 3),
+                      "end": round(st + src_len, 3),
+                      "speed": round(speed, 4), "note": s["role"]})
+        notes.append(f"{s['role']}: {disp:.2f}s @ {st:.1f}s in {os.path.basename(sc['path'])} ({speed:.2f}x)")
 
     total = sum(x.get("dur", 0) if x.get("kind") in ("black", "noise")
                 else (x["end"] - x["start"]) / x.get("speed", 1.0) for x in shots)

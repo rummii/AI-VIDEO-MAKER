@@ -11,30 +11,30 @@
   ],
   "style": "siruma",
   "music_start": 0.0,
-  "notes": "intro: flash 2.46s\nglitch: glitch 0.60s\naction: 14.98s @ 0.0s in IMG_5501.MOV\nscenic: 9.64s @ 0.0s in IMG_5497.MOV\nburst1: texture close-up 0.60s from money zone\nburst2: texture close-up 0.28s from money zone\nburst3: texture close-up 0.30s from money zone\naction2: 8.41s @ 0.0s in IMG_5547.MOV\ncalm: 6.01s @ 5.0s in IMG_5736.MOV\nflash: flash 0.60s\nmoney: 11.98s @ 0.0s in IMG_5735-rotated.mp4\nscenic2: 4.13s @ 1.9s in IMG_5501.MOV",
+  "notes": "intro: flash 2.18s\nglitch: glitch 0.44s\naction: 15.42s @ 0.0s in IMG_5501.MOV (0.52x)\nscenic: 9.87s @ 1.2s in IMG_5497.MOV (0.46x)\nburst1: texture close-up 0.42s from money zone\nburst2: texture close-up 0.28s from money zone\nburst3: texture close-up 0.25s from money zone\naction2: 9.84s @ 0.0s in IMG_5547.MOV (0.81x)\ncalm: 4.63s @ 5.7s in IMG_5736.MOV (1.00x)\nflash: flash 0.42s\nmoney: 12.00s @ 0.0s in IMG_5735-rotated.mp4 (1.00x)\nscenic2: 4.25s @ 1.9s in IMG_5501.MOV (1.00x)",
   "shots": [
     {
       "kind": "black",
-      "dur": 2.461,
+      "dur": 2.183,
       "note": "intro"
     },
     {
       "kind": "noise",
-      "dur": 0.604,
+      "dur": 0.441,
       "note": "glitch"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5501.MOV",
       "start": 0.0,
-      "end": 14.977,
-      "speed": 1.0,
+      "end": 8.0,
+      "speed": 0.5189,
       "note": "action"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5497.MOV",
-      "start": 0,
-      "end": 9.636,
-      "speed": 1.0,
+      "start": 1.167,
+      "end": 5.667,
+      "speed": 0.456,
       "note": "scenic"
     },
     {
@@ -42,7 +42,7 @@
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5735-rotated.mp4",
       "zoom": 2.6,
       "start": 0.88,
-      "end": 1.484,
+      "end": 1.298,
       "speed": 1.0,
       "note": "burst1 texture cutaway"
     },
@@ -60,40 +60,40 @@
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5735-rotated.mp4",
       "zoom": 2.6,
       "start": 9.35,
-      "end": 9.65,
+      "end": 9.6,
       "speed": 1.0,
       "note": "burst3 texture cutaway"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5547.MOV",
       "start": 0.0,
-      "end": 8.406,
-      "speed": 1.0,
+      "end": 8.0,
+      "speed": 0.8128,
       "note": "action2"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5736.MOV",
-      "start": 5.0,
-      "end": 11.014,
+      "start": 5.686,
+      "end": 10.314,
       "speed": 1.0,
       "note": "calm"
     },
     {
       "kind": "black",
-      "dur": 0.604,
+      "dur": 0.418,
       "note": "flash"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5735-rotated.mp4",
-      "start": 0.01,
-      "end": 11.99,
-      "speed": 1.0,
+      "start": 0.0,
+      "end": 12.0,
+      "speed": 0.9996,
       "note": "money"
     },
     {
       "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5501.MOV",
-      "start": 1.933,
-      "end": 6.067,
+      "start": 1.875,
+      "end": 6.125,
       "speed": 1.0,
       "note": "scenic2"
     }
@@ -102,18 +102,18 @@
     {
       "kind": "intro_dark",
       "start": 0.0,
-      "end": 2.461
+      "end": 2.183
     },
     {
       "kind": "word",
       "text": "CHALLENGES",
-      "start": 44.886,
-      "end": 47.886
+      "start": 44.746,
+      "end": 47.746
     },
     {
       "kind": "outro_url",
-      "start": 55.867,
-      "end": 60.0
+      "start": 55.751,
+      "end": 60.001
     }
   ]
 }
