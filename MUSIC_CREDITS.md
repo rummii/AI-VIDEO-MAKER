@@ -31,6 +31,22 @@ All tracks below are cleared for commercial use (monetized posts are fine).
 
 Source: Free Music Archive (freemusicarchive.org).
 
+## Kevin MacLeod (incompetech.com) — euphoric additions
+
+| Track | License | Attribution needed |
+|---|---|---|
+| Shiny Tech | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Shiny Tech (CC BY 4.0, incompetech.com)" |
+| Blip Stream | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Blip Stream (CC BY 4.0, incompetech.com)" |
+| Cipher | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Cipher (CC BY 4.0, incompetech.com)" |
+| Electrodoodle | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Electrodoodle (CC BY 4.0, incompetech.com)" |
+| Inspired | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Inspired (CC BY 4.0, incompetech.com)" |
+| Raving Energy (faster) | CC BY 4.0 | **Yes** - credit "Kevin MacLeod - Raving Energy (faster) (CC BY 4.0, incompetech.com)" |
+
+Source: incompetech.com. All Kevin MacLeod catalog tracks are CC BY 4.0 -
+commercial use is fine, credit is mandatory (put the credit line in the video
+description). Uplifting/bright/driving moods throughout, matching the
+"euphoric" direction.
+
 Notes:
 - CC0 = no attribution required, but crediting the artist is good practice
   if you ever want to list it in a description.
