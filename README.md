@@ -62,6 +62,10 @@ Disable with `--nobrand`. Customize with an `overlays` array in the shots JSON:
 
 - **Chill house / melodic electronic** (Uncan, Troigo, Stirquoise, John Bartmann)
   - default for edits; slower pacing, longer scenic holds
+- **Deep house** (Mixkit — Deep House, Deep Urban, House Vibez, Cat Walk, etc.)
+  - 117–129 BPM, warm grooves; commercial-safe, no attribution
+- **Euphoric / uplifting electronic** (Kevin MacLeod — Blip Stream, Cipher, etc.)
+  - CC BY 4.0 — credit required in description
 - **Dubstep** (DUBSTEP ATTACK series) - available on request for heavy edits
 - All tracks pre-analyzed in `music/library.json` (BPM, beat grid, drop point)
 

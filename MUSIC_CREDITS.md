@@ -47,6 +47,32 @@ commercial use is fine, credit is mandatory (put the credit line in the video
 description). Uplifting/bright/driving moods throughout, matching the
 "euphoric" direction.
 
+## Mixkit (Envato) — Deep House collection
+
+| Track | Artist | License | Attribution needed |
+|---|---|---|---|
+| Deep House | Arulo | Mixkit Stock Music Free License | No |
+| Deep Urban | Eugenio Mininni | Mixkit Stock Music Free License | No |
+| House Vibez | Lily J | Mixkit Stock Music Free License | No |
+| Cat Walk | Arulo | Mixkit Stock Music Free License | No |
+| Deep Techno | Alejandro Magaña | Mixkit Stock Music Free License | No |
+| The Clique | Michael Ramir C. | Mixkit Stock Music Free License | No |
+| House Vibes | Alejandro Magaña | Mixkit Stock Music Free License | No |
+| House One | Francisco Alvear | Mixkit Stock Music Free License | No |
+| Summer Dream | Eugenio Mininni | Mixkit Stock Music Free License | No |
+| A Night to Remember | Michael Ramir C. | Mixkit Stock Music Free License | No |
+
+Source: mixkit.co/free-stock-music. The Mixkit Stock Music Free License allows
+commercial use in YouTube/social/online ads with **no attribution required**.
+It prohibits TV/radio broadcast, CDs/DVDs, video games, and standalone
+redistribution — fine for Monitor Gear's social workflow.
+
+IMPORTANT — FreeToUse (freetouse.com) was evaluated as a source but its FREE
+license explicitly bans Commercial Content (brand promo) — only their PAID
+Commercial Plan would clear it. Do NOT add freetouse.com tracks with the free
+license to this library. FMA's deep-house genre tracks are CC BY-NC-SA/NC
+(non-commercial) and were rejected for the same reason.
+
 Notes:
 - CC0 = no attribution required, but crediting the artist is good practice
   if you ever want to list it in a description.
