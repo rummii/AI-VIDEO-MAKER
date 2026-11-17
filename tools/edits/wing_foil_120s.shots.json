@@ -1,0 +1,159 @@
+{
+  "name": "wing_foil_120s",
+  "style": "siruma",
+  "music_start": 106.14,
+  "notes": "hand-pinned re-cut of wing_foil_120s; no slow motion; drop lands on money shot",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.5,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.6,
+      "note": "glitch"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-25.mp4",
+      "start": 0.5,
+      "end": 13.0,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "footage/IMG_5737.MOV",
+      "start": 0.0,
+      "end": 15.0,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "zoom": 2.6,
+      "start": 0.5,
+      "end": 1.0,
+      "speed": 1.0,
+      "note": "burst1"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "start": 0.0,
+      "end": 10.0,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-04.mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "speed": 1.0,
+      "note": "scenic2"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-30.mp4",
+      "start": 1.0,
+      "end": 12.0,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-54.mp4",
+      "start": 0.0,
+      "end": 11.0,
+      "speed": 1.0,
+      "note": "scenic3"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "zoom": 2.6,
+      "start": 2.5,
+      "end": 2.8,
+      "speed": 1.0,
+      "note": "burst2"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-21.mp4",
+      "start": 0.0,
+      "end": 5.4,
+      "speed": 1.0,
+      "note": "action3"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-09.mp4",
+      "start": 0.0,
+      "end": 8.9,
+      "speed": 1.0,
+      "note": "action4"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "start": 0.0,
+      "end": 7.3,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-54.mp4",
+      "start": 0.0,
+      "end": 4.9,
+      "speed": 1.0,
+      "note": "money2"
+    },
+    {
+      "clip": "footage/IMG_5740.MOV",
+      "start": 0.0,
+      "end": 11.65,
+      "speed": 1.0,
+      "note": "scenic4"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "zoom": 2.6,
+      "start": 4.0,
+      "end": 4.3,
+      "speed": 1.0,
+      "note": "burst3"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-38.mp4",
+      "start": 0.0,
+      "end": 9.0,
+      "speed": 1.0,
+      "note": "calm2"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-23.mp4",
+      "start": 0.0,
+      "end": 4.0,
+      "speed": 1.0,
+      "note": "outro"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.5
+    },
+    {
+      "kind": "word",
+      "text": "ADRENALINE",
+      "start": 83.35,
+      "end": 86.35
+    },
+    {
+      "kind": "outro_url",
+      "start": 116.0,
+      "end": 120.0
+    }
+  ]
+}
