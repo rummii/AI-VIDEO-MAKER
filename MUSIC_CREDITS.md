@@ -73,6 +73,25 @@ Commercial Plan would clear it. Do NOT add freetouse.com tracks with the free
 license to this library. FMA's deep-house genre tracks are CC BY-NC-SA/NC
 (non-commercial) and were rejected for the same reason.
 
+## Mixkit — Chill Pop / Indie Electronic / Downtempo (see music/GENRE_BRIEF.md)
+
+All Mixkit Stock Music Free License — commercial OK, no attribution required.
+
+| Track | Artist | BPM (analyzed) | Vibe |
+|---|---|---|---|
+| Voxscape | Eugenio Mininni | 83.4 | 5:00 atmospheric, vocal textures |
+| Day Dreamin with U | Michael Ramir C. | 117.5 | dreamy chill pop |
+| Slow Pop | Arulo | 80.7 | relaxed pop |
+| Pondering | Arulo | 99.4 | introspective |
+| Reflections on the Shore | Alejandro Magaña | 64.6 | slow ambient pop |
+| Echoes | Andrew Ev | 136.0 | atmospheric (3:46) |
+| Finding Myself | Michael Ramir C. | 143.6 | reflective |
+| Staring at the Night Sky | Alejandro Magaña | 117.5 | late-night dreamy |
+| Lullaby Night | Diego Nava | 112.3 | gentle nocturnal |
+| Old Letter | Michael Ramir C. | 136.0 | melancholic |
+| Chillax | Francisco Alvear | — | laid-back |
+| Time Out | Ahjay Stelino | 60.1 | very slow, ambient |
+
 Notes:
 - CC0 = no attribution required, but crediting the artist is good practice
   if you ever want to list it in a description.
