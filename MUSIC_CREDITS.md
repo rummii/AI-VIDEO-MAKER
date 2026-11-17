@@ -108,3 +108,47 @@ Notes:
 - Tracks rejected during curation were CC BY-NC / NC-ND (non-commercial) and
   are NOT in the library - do not add non-commercial tracks for company use.
 
+
+## Pixabay — user-uploaded batch (18 Nov 2026)
+
+All files below came from Pixabay (filenames keep the original
+artist/track slug + Pixabay ID). License: Pixabay Content License -
+free commercial use, no attribution required; do not resell the raw
+file standalone or use embedded brands commercially.
+
+| File | License |
+|---|---|
+| 9jackjack8-i-feel-house-beat-404555 | Pixabay Content License (commercial OK, no attribution) |
+| 9jackjack8-kalimba-sky-light-tropical-house-629279 | Pixabay Content License (commercial OK, no attribution) |
+| 9jackjack8-vocal-house-301199 | Pixabay Content License (commercial OK, no attribution) |
+| chrisdjyogi-kokaina-deep-house-vibes-chopped-vocal-fx-426414 | Pixabay Content License (commercial OK, no attribution) |
+| dedpled-perfect-phonk-142735 | Pixabay Content License (commercial OK, no attribution) |
+| djdoblina-hardstyle-496563 | Pixabay Content License (commercial OK, no attribution) |
+| easy_eva-house-july-605765 | Pixabay Content License (commercial OK, no attribution) |
+| easy_eva-house-july_65sec-605767 | Pixabay Content License (commercial OK, no attribution) |
+| johnnyzet666-johnnyzet666-im-done-chasing-your-ghost-509560 | Pixabay Content License (commercial OK, no attribution) |
+| kaazoom-one-night-in-tokyo-japanese-edm-fusion-song-female-vocals-471937 | Pixabay Content License (commercial OK, no attribution) |
+| khemrajdotin-deep-house-with-female-vocals-219016 | Pixabay Content License (commercial OK, no attribution) |
+| lone_wolf_productions-play-me-555900 | Pixabay Content License (commercial OK, no attribution) |
+| moonpetalmedia-sunset-dont-lie-female-vocals-house-reggae-527674 | Pixabay Content License (commercial OK, no attribution) |
+| onlineaielements-take-me-higher-now-vocal-trance-445591 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-bluesy-house-amp-deep-house-walking-blues-580629 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-breakup-house-amp-deep-house-left-me-on-red-580587 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-chill-house-amp-deep-house-sea-lion-580582 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-cloud-rap-music-628517 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-club-house-amp-deep-house-rail-slide-580625 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-electronic-music-star-map-in-the-sand-635872 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-electronic-music-tunnel-beneath-the-city-635869 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-house-amp-deep-houserap-mix-last-bus-home-580584 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-morning-house-amp-deep-house-i-hate-my-alarm-580585 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-psytrance-midnight-lagoon-635884 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-psytrance-the-harmonic-greenhouse-635883 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-psytrance-the-last-ridge-before-dawn-635873 | Pixabay Content License (commercial OK, no attribution) |
+| openmindaudio-synthwave-violet-circuit-635728 | Pixabay Content License (commercial OK, no attribution) |
+| penguinmusic-gardens-stylish-chill-303261 | Pixabay Content License (commercial OK, no attribution) |
+| saturn-3-music-summer-house-where-we-surfin-vocal-synth-summer-house-119570 | Pixabay Content License (commercial OK, no attribution) |
+| shidenbeatsmusic-edm-deep-house-ish-female-vocal-112184 | Pixabay Content License (commercial OK, no attribution) |
+| sound4stock-vocal-deep-house-559748 | Pixabay Content License (commercial OK, no attribution) |
+| sunset-house-grooves-deep-house-sunset-538759 | Pixabay Content License (commercial OK, no attribution) |
+| sunset-house-grooves-sunset-house-classic-538760 | Pixabay Content License (commercial OK, no attribution) |
+| televisedfella-something-more-melodic-house-edm-televised-fella-216306 | Pixabay Content License (commercial OK, no attribution) |
