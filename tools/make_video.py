@@ -125,8 +125,10 @@ def choose_music_segment(track, length, hit_drop_at=0.45):
     return round(start, 3)
 
 # ---------------------------------------------------------------- build
-def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=0.8):
+def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=0.8,
+                 sfx_list=None):
     """Assemble trim/speed/scale/color filters + concat + brand overlays.
+    SFX (risers/impacts) are mixed into the music before loudnorm.
     Shot kinds: "clip" (default; file input), "texture" (file input, zoomed
     crop for B-roll bridges), "black" (flash card), "noise" (glitch static).
     Returns (filter, inputs_extra, total). inputs_extra is a list of extra
@@ -160,22 +162,39 @@ def build_filter(shots, out_w, out_h, fps, music_start, overlays=None, fade_out=
             parts.append(f"{trim}{chain}[v{i}]")
         labels.append(f"[v{i}]")
     concat = "".join(labels) + f"concat=n={len(shots)}:v=1:a=0[vcat]"
-    # audio: cut music segment, normalize, fade out at the end
+    # audio: cut music segment, mix in SFX (risers/impacts), normalize, fade
     total = sum(s["dur"] if s.get("kind") in ("black", "noise")
                 else (s["end"] - s["start"]) / s.get("speed", 1.0) for s in shots)
     music_idx = file_idx
+    sfx = (sfx_list or [])
+    # input order: clips, music, sfx..., overlay images...
+    sfx_base = music_idx + 1
+    amix_inputs = f"[amusic]" + "".join(f"[asfx{j}]" for j in range(len(sfx)))
     a = (f"[{music_idx}:a]atrim=start={music_start:.3f}:duration={total:.3f},"
-         f"asetpts=PTS-STARTPTS,loudnorm=I=-14:TP=-1.5:LRA=11,"
-         f"afade=t=out:st={max(total - 1.0, 0):.3f}:d=1.0[aout]")
-    parts.append(concat)
+         f"asetpts=PTS-STARTPTS,volume=1.0[amusic]")
     parts.append(a)
-
-    # ---- brand overlays ------------------------------------------------
+    for j, e in enumerate(sfx):
+        idx = sfx_base + j
+        gain = float(e.get("gain_db", 0.0))
+        at = max(0.0, min(float(e.get("start", 0.0)), total))
+        parts.append(f"[{idx}:a]adelay={int(at*1000)}|{int(at*1000)},"
+                     f"asetpts=PTS-STARTPTS,volume={10**(gain/20):.3f}[asfx{j}]")
+    if sfx:
+        parts.append(f"{amix_inputs}amix=inputs={len(sfx)+1}:duration=longest:"
+                     f"normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,"
+                     f"afade=t=out:st={max(total - 1.0, 0):.3f}:d=1.0[aout]")
+    else:
+        parts.append(f"[amusic]loudnorm=I=-14:TP=-1.5:LRA=11,"
+                     f"afade=t=out:st={max(total - 1.0, 0):.3f}:d=1.0[aout]")
+    parts.append(concat)
     extra_inputs = []
+    # SFX inputs follow music + overlay images
+    for e in sfx:
+        extra_inputs += ["-i", e["file"]]
     current = "[vcat]"
     if overlays:
         for k, ov in enumerate(overlays):
-            img_idx = music_idx + 1 + k
+            img_idx = music_idx + 1 + len(sfx) + k
             extra_inputs += ["-loop", "1", "-t", f"{total:.3f}", "-i", ov["png"]]
             if ov["mode"] == "watermark":
                 chain = (f"[{img_idx}:v]format=rgba[ov{k}]")
@@ -262,8 +281,22 @@ def cmd_build(args):
             overlays = brand_overlays.build_overlay_plan(
                 project, shots, total, w, h, shots_doc.get("overlays"),
                 sponsors=sponsor_files)
+        # SFX inserts: shots.json "sfx" -> [{file, start, gain_db?}]
+        sfx_list = shots_doc.get("sfx", [])
+        resolved_sfx = []
+        for e in sfx_list:
+            f = e["file"]
+            if not os.path.isabs(f):
+                f = os.path.join(ROOT, f)
+            if not os.path.exists(f):
+                print(f"sfx missing (skipped): {f}")
+                continue
+            resolved_sfx.append(dict(e, file=f))
+        sfx_list = resolved_sfx
+        if sfx_list:
+            print(f"sfx: {len(sfx_list)} inserts")
         filt, extra_inputs, total, vfinal = build_filter(
-            shots, w, h, fps, music_start, overlays)
+            shots, w, h, fps, music_start, overlays, sfx_list=sfx_list)
         inputs += extra_inputs
         out = args.out.replace(":16:9", "").replace(":9:16", "") or out_base
         outpath = os.path.join(ROOT, "output", f"{out_base}_{suffix}.mp4")

@@ -1,92 +1,182 @@
 {
   "name": "wing_foil_120s",
   "style": "siruma",
-  "music_start": 106.14,
-  "notes": "hand-pinned re-cut of wing_foil_120s; no slow motion; drop lands on money shot",
+  "music_start": 99.64,
+  "notes": "Option A: hook-first, no slow motion, riser+impact on drop, two word pops",
   "shots": [
     {
-      "kind": "black",
-      "dur": 2.5,
-      "note": "intro"
+      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "start": 0.0,
+      "end": 2.4,
+      "speed": 1.0,
+      "note": "hook"
     },
     {
       "kind": "noise",
-      "dur": 0.6,
+      "dur": 0.4,
       "note": "glitch"
+    },
+    {
+      "kind": "black",
+      "dur": 1.95,
+      "note": "intro"
     },
     {
       "clip": "footage/video_2026-11-17_14-57-25.mp4",
       "start": 0.5,
-      "end": 13.0,
+      "end": 5.1,
       "speed": 1.0,
-      "note": "action"
+      "note": "setup"
     },
     {
-      "clip": "footage/IMG_5737.MOV",
-      "start": 0.0,
-      "end": 15.0,
+      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "start": 5.3,
+      "end": 9.5,
       "speed": 1.0,
-      "note": "scenic"
+      "note": "launch"
     },
     {
       "kind": "texture",
       "clip": "footage/video_2026-11-17_14-59-17.mp4",
       "zoom": 2.6,
-      "start": 0.5,
-      "end": 1.0,
+      "start": 0.3,
+      "end": 0.8,
       "speed": 1.0,
       "note": "burst1"
     },
     {
-      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "clip": "footage/video_2026-11-17_14-58-10.mp4",
       "start": 0.0,
-      "end": 10.0,
+      "end": 4.5,
       "speed": 1.0,
-      "note": "action2"
+      "note": "rush"
     },
     {
-      "clip": "footage/video_2026-11-17_14-59-04.mp4",
+      "clip": "footage/IMG_5737.MOV",
       "start": 0.0,
-      "end": 5.0,
+      "end": 4.5,
       "speed": 1.0,
-      "note": "scenic2"
-    },
-    {
-      "clip": "footage/video_2026-11-17_14-57-30.mp4",
-      "start": 1.0,
-      "end": 12.0,
-      "speed": 1.0,
-      "note": "calm"
-    },
-    {
-      "clip": "footage/video_2026-11-17_14-58-54.mp4",
-      "start": 0.0,
-      "end": 11.0,
-      "speed": 1.0,
-      "note": "scenic3"
+      "note": "lookout"
     },
     {
       "kind": "texture",
-      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "clip": "footage/video_2026-11-17_14-57-25.mp4",
       "zoom": 2.6,
-      "start": 2.5,
-      "end": 2.8,
+      "start": 3.0,
+      "end": 3.3,
       "speed": 1.0,
       "note": "burst2"
     },
     {
-      "clip": "footage/video_2026-11-17_14-59-21.mp4",
-      "start": 0.0,
-      "end": 5.4,
+      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "start": 0.5,
+      "end": 5.2,
       "speed": 1.0,
-      "note": "action3"
+      "note": "run in"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-57-25.mp4",
+      "zoom": 2.6,
+      "start": 5.0,
+      "end": 5.35,
+      "speed": 1.0,
+      "note": "burst3"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-38.mp4",
+      "start": 0.0,
+      "end": 3.6,
+      "speed": 1.0,
+      "note": "kayak rush"
+    },
+    {
+      "clip": "footage/IMG_5740.MOV",
+      "start": 0.0,
+      "end": 4.0,
+      "speed": 1.0,
+      "note": "overlook"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-54.mp4",
+      "start": 0.0,
+      "end": 9.0,
+      "speed": 1.0,
+      "note": "POV paddle"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-13.mp4",
+      "start": 0.0,
+      "end": 7.2,
+      "speed": 1.0,
+      "note": "wide sea"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-57-30.mp4",
+      "zoom": 2.6,
+      "start": 2.0,
+      "end": 2.3,
+      "speed": 1.0,
+      "note": "burst4"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-50.mp4",
+      "start": 0.0,
+      "end": 6.6,
+      "speed": 1.0,
+      "note": "POV arms"
     },
     {
       "clip": "footage/video_2026-11-17_14-59-09.mp4",
       "start": 0.0,
       "end": 8.9,
       "speed": 1.0,
-      "note": "action4"
+      "note": "paddle out"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-00.mp4",
+      "start": 6.0,
+      "end": 9.5,
+      "speed": 1.0,
+      "note": "launch POV"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-57-30.mp4",
+      "start": 0.0,
+      "end": 7.0,
+      "speed": 1.0,
+      "note": "water calm"
+    },
+    {
+      "kind": "texture",
+      "clip": "footage/video_2026-11-17_14-57-25.mp4",
+      "zoom": 2.6,
+      "start": 7.0,
+      "end": 7.35,
+      "speed": 1.0,
+      "note": "burst5"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-27.mp4",
+      "start": 0.0,
+      "end": 5.85,
+      "speed": 1.0,
+      "note": "paddle back"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-58-54.mp4",
+      "start": 4.5,
+      "end": 6.6,
+      "speed": 1.0,
+      "note": "POV trail"
+    },
+    {
+      "clip": "footage/video_2026-11-17_14-59-17.mp4",
+      "start": 5.0,
+      "end": 7.4,
+      "speed": 1.0,
+      "note": "splash"
     },
     {
       "kind": "black",
@@ -103,56 +193,70 @@
     {
       "clip": "footage/video_2026-11-17_14-57-54.mp4",
       "start": 0.0,
-      "end": 4.9,
+      "end": 5.0,
       "speed": 1.0,
       "note": "money2"
     },
     {
+      "clip": "footage/video_2026-11-17_14-59-21.mp4",
+      "start": 0.0,
+      "end": 5.4,
+      "speed": 1.0,
+      "note": "money3"
+    },
+    {
       "clip": "footage/IMG_5740.MOV",
-      "start": 0.0,
-      "end": 11.65,
-      "speed": 1.0,
-      "note": "scenic4"
-    },
-    {
-      "kind": "texture",
-      "clip": "footage/video_2026-11-17_14-59-17.mp4",
-      "zoom": 2.6,
       "start": 4.0,
-      "end": 4.3,
-      "speed": 1.0,
-      "note": "burst3"
-    },
-    {
-      "clip": "footage/video_2026-11-17_14-57-38.mp4",
-      "start": 0.0,
       "end": 9.0,
       "speed": 1.0,
-      "note": "calm2"
+      "note": "money4"
     },
     {
-      "clip": "footage/video_2026-11-17_14-58-23.mp4",
-      "start": 0.0,
-      "end": 4.0,
+      "clip": "footage/IMG_5738.MOV",
+      "start": 6.0,
+      "end": 13.95,
       "speed": 1.0,
-      "note": "outro"
+      "note": "finale"
+    }
+  ],
+  "sfx": [
+    {
+      "file": "assets/sfx/riser.wav",
+      "start": 80.85,
+      "gain_db": -3.0
+    },
+    {
+      "file": "assets/sfx/impact.wav",
+      "start": 89.35,
+      "gain_db": 0.0
+    },
+    {
+      "file": "assets/sfx/impact_noise.wav",
+      "start": 89.35,
+      "gain_db": -3.0
     }
   ],
   "overlays": [
     {
       "kind": "intro_dark",
-      "start": 0.0,
-      "end": 2.5
+      "start": 2.4,
+      "end": 4.35
+    },
+    {
+      "kind": "word",
+      "text": "CHALLENGES",
+      "start": 30.0,
+      "end": 33.0
     },
     {
       "kind": "word",
       "text": "ADRENALINE",
-      "start": 83.35,
-      "end": 86.35
+      "start": 89.64999999999999,
+      "end": 92.64999999999999
     },
     {
       "kind": "outro_url",
-      "start": 116.0,
+      "start": 117.0,
       "end": 120.0
     }
   ]
