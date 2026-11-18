@@ -98,6 +98,8 @@ All Mixkit Stock Music Free License — commercial OK, no attribution required.
 |---|---|---|---|
 | The Realest Thought (Emotional House & Deep House) | openmindaudio | 117.5 | Pixabay Content License — commercial use, no attribution required |
 
+**Content ID warning:** the Pixabay Content License is legal permission, but it does NOT prevent YouTube Content ID claims — contributors/distributors can register tracks anyway. `Deep House Sunset` by sunset-house-grooves (track ID 538759) is currently claimed by "Elite Alliance Music" on the "Birthday PAPA" upload. See `music/CLAIM_DISPUTE.md` for the dispute procedure and `music/PROVENANCE.md` for the log of tracks actually used.
+
 The Pixabay Content License allows free commercial use without attribution
 (just don't resell the raw file standalone, don't use embedded brands/trademarks
 commercially). File: `music/Pixabay - openmindaudio - The Realest Thought.mp3`.
