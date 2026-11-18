@@ -1,0 +1,122 @@
+{
+  "name": "kite_sunset_120s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_3756.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5895.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5896.MOV",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_01-57-10.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_01-57-22.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_01-57-31.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_01-57-50.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_02-00-18.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_02-00-27.mp4",
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\video_2026-11-18_02-00-36.mp4"
+  ],
+  "style": "siruma",
+  "music_start": 51.625,
+  "notes": "hand-fixed: 1.0x speeds, exact 120s, kite sunset footage",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.315,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.488,
+      "note": "glitch"
+    },
+    {
+      "clip": "footage/IMG_5895.MOV",
+      "start": 10.0,
+      "end": 42.9,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "footage/IMG_3756.MOV",
+      "start": 100.0,
+      "end": 120.99,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_3756.MOV",
+      "zoom": 2.6,
+      "start": 590.88,
+      "end": 591.391,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_3756.MOV",
+      "zoom": 2.6,
+      "start": 595.5,
+      "end": 595.78,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_3756.MOV",
+      "zoom": 2.6,
+      "start": 599.35,
+      "end": 599.6,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "footage/video_2026-11-18_02-00-36.mp4",
+      "start": 0.0,
+      "end": 18.0,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "footage/video_2026-11-18_01-57-10.mp4",
+      "start": 0.6,
+      "end": 14.25,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.15,
+      "note": "flash"
+    },
+    {
+      "clip": "footage/IMG_3756.MOV",
+      "start": 590.0,
+      "end": 616.09,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "footage/video_2026-11-18_02-00-18.mp4",
+      "start": 0.756,
+      "end": 5.132,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.315
+    },
+    {
+      "kind": "word",
+      "text": "ADRENALINE",
+      "start": 90.424,
+      "end": 93.424
+    },
+    {
+      "kind": "outro_url",
+      "start": 115.512,
+      "end": 119.215
+    }
+  ]
+}
