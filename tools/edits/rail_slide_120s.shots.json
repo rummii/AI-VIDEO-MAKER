@@ -1,0 +1,117 @@
+{
+  "name": "rail_slide_120s",
+  "style": "siruma",
+  "music_start": 6.72,
+  "notes": "hand-pinned 9:16 only; no slow motion; in-flight windows avoid slipper launch shots",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.31,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.49,
+      "note": "glitch"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 36.0,
+      "end": 64.0,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "kind": "texture",
+      "clip": "clips/IMG_3730.MP4",
+      "zoom": 2.6,
+      "start": 75.0,
+      "end": 75.51,
+      "speed": 1.0,
+      "note": "burst1"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 80.0,
+      "end": 98.0,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 105.0,
+      "end": 121.0,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "kind": "texture",
+      "clip": "clips/IMG_3730.MP4",
+      "zoom": 2.6,
+      "start": 130.0,
+      "end": 130.28,
+      "speed": 1.0,
+      "note": "burst2"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 135.0,
+      "end": 147.0,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.42,
+      "note": "flash"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 150.0,
+      "end": 174.0,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 185.0,
+      "end": 193.0,
+      "speed": 1.0,
+      "note": "scenic2"
+    },
+    {
+      "kind": "texture",
+      "clip": "clips/IMG_3730.MP4",
+      "zoom": 2.6,
+      "start": 200.0,
+      "end": 200.4,
+      "speed": 1.0,
+      "note": "burst3"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 205.0,
+      "end": 214.59,
+      "speed": 1.0,
+      "note": "outro"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.31
+    },
+    {
+      "kind": "word",
+      "text": "ADRENALINE",
+      "start": 78.41,
+      "end": 81.41
+    },
+    {
+      "kind": "outro_url",
+      "start": 116.0,
+      "end": 120.0
+    }
+  ]
+}
