@@ -1,0 +1,145 @@
+{
+  "name": "rail_slide_full",
+  "style": "siruma",
+  "music_start": 0.0,
+  "notes": "FULL SONG 132.74s. Creative cut: launch with slippers, hill flights, drop at 84.73 on the money hold, riser+impact, two word pops, URL outro held to end.",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.4,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.5,
+      "note": "glitch"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 6.0,
+      "end": 18.0,
+      "speed": 1.0,
+      "note": "hook - launch, wing on sand"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 38.0,
+      "end": 48.0,
+      "speed": 1.0,
+      "note": "takeoff / harness close"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 60.0,
+      "end": 72.0,
+      "speed": 1.0,
+      "note": "first flight"
+    },
+    {
+      "kind": "texture",
+      "clip": "clips/IMG_3730.MP4",
+      "zoom": 2.6,
+      "start": 70.0,
+      "end": 70.5,
+      "speed": 1.0,
+      "note": "burst1"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 95.0,
+      "end": 108.0,
+      "speed": 1.0,
+      "note": "ridge soaring"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 125.0,
+      "end": 136.0,
+      "speed": 1.0,
+      "note": "calm - green hills"
+    },
+    {
+      "kind": "texture",
+      "clip": "clips/IMG_3730.MP4",
+      "zoom": 2.6,
+      "start": 130.0,
+      "end": 130.4,
+      "speed": 1.0,
+      "note": "burst2"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 150.0,
+      "end": 162.0,
+      "speed": 1.0,
+      "note": "second flight"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 170.0,
+      "end": 180.63,
+      "speed": 1.0,
+      "note": "wing / sky"
+    },
+    {
+      "kind": "black",
+      "dur": 0.3,
+      "note": "flash"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 190.0,
+      "end": 220.0,
+      "speed": 1.0,
+      "note": "MONEY - long flight hold"
+    },
+    {
+      "clip": "clips/IMG_3730.MP4",
+      "start": 225.0,
+      "end": 243.01,
+      "speed": 1.0,
+      "note": "sunset coast outro"
+    }
+  ],
+  "sfx": [
+    {
+      "file": "assets/sfx/riser.wav",
+      "start": 76.23,
+      "gain_db": -4.0
+    },
+    {
+      "file": "assets/sfx/impact.wav",
+      "start": 84.73,
+      "gain_db": 0.0
+    },
+    {
+      "file": "assets/sfx/impact_noise.wav",
+      "start": 84.73,
+      "gain_db": -3.0
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.4
+    },
+    {
+      "kind": "word",
+      "text": "CHALLENGES",
+      "start": 36.0,
+      "end": 39.0
+    },
+    {
+      "kind": "word",
+      "text": "ADRENALINE",
+      "start": 85.23,
+      "end": 88.23
+    },
+    {
+      "kind": "outro_url",
+      "start": 126.74,
+      "end": 132.74
+    }
+  ]
+}

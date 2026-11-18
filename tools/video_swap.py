@@ -60,8 +60,24 @@ def api_request(method, url, token, body=None):
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     data = json.dumps(body).encode() if body is not None else None
     req = urllib.request.Request(url, data=data, headers=headers, method=method)
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode()[:400]
+        if e.code == 402:
+            print("Replicate says PAYMENT REQUIRED (402).")
+            print("Add a payment method or claim free credit at:")
+            print("  https://replicate.com/account/billing")
+            print("Then re-run this command.")
+            print("Details:", detail)
+        elif e.code == 401:
+            print("REPLICATE_API_TOKEN rejected (401). Create a new token at:")
+            print("  https://replicate.com/account/api-tokens")
+            print("Details:", detail)
+        else:
+            print(f"Replicate API error {e.code}: {detail}")
+        raise
 
 
 def swap(video, start, duration, ref, prompt, out, resolution="720p", aspect="9:16", seed=None):
