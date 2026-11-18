@@ -1,0 +1,113 @@
+{
+  "name": "last_bus_home_120s",
+  "source": [
+    "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV"
+  ],
+  "style": "siruma",
+  "music_start": 13.76,
+  "notes": "hand-fixed: 1.0x speeds, exact 120s",
+  "shots": [
+    {
+      "kind": "black",
+      "dur": 2.308,
+      "note": "intro"
+    },
+    {
+      "kind": "noise",
+      "dur": 0.488,
+      "note": "glitch"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 10.0,
+      "end": 42.9,
+      "speed": 1.0,
+      "note": "action"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 100.0,
+      "end": 120.8,
+      "speed": 1.0,
+      "note": "scenic"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "zoom": 2.6,
+      "start": 205.0,
+      "end": 205.51,
+      "speed": 1.0,
+      "note": "burst1 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "zoom": 2.6,
+      "start": 210.0,
+      "end": 210.28,
+      "speed": 1.0,
+      "note": "burst2 texture cutaway"
+    },
+    {
+      "kind": "texture",
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "zoom": 2.6,
+      "start": 215.0,
+      "end": 215.25,
+      "speed": 1.0,
+      "note": "burst3 texture cutaway"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 45.0,
+      "end": 60.0,
+      "speed": 1.0,
+      "note": "action2"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 70.0,
+      "end": 86.38,
+      "speed": 1.0,
+      "note": "calm"
+    },
+    {
+      "kind": "black",
+      "dur": 0.464,
+      "note": "flash"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 200.0,
+      "end": 226.15,
+      "speed": 1.0,
+      "note": "money"
+    },
+    {
+      "clip": "C:\\Users\\ahmad\\Documents\\Default Project\\footage\\IMG_5767.MOV",
+      "start": 213.764,
+      "end": 218.236,
+      "speed": 1.0,
+      "note": "scenic2"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "intro_dark",
+      "start": 0.0,
+      "end": 2.308
+    },
+    {
+      "kind": "word",
+      "text": "EXPLORATION",
+      "start": 90.383,
+      "end": 93.383
+    },
+    {
+      "kind": "outro_url",
+      "start": 115.529,
+      "end": 119.096
+    }
+  ]
+}
