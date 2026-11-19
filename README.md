@@ -1,7 +1,18 @@
-# Action Sports Edit Pipeline
+# Maverick Edit Engine
 
-Drop footage in `clips/`, say what you want, get finished videos in `output/`.
-The agent runs everything; you never touch a command line.
+Action-sports video pipeline — drop footage in `clips/`, say what you want,
+get finished branded videos in `output/`.
+
+## GUI (Windows 11)
+
+Double-click **`Maverick Edit Engine.bat`** in this folder. No install needed —
+it uses Python's built-in Tkinter.
+
+- Clean white interface, loads any shots plan (`tools/edits/*.json`)
+- **Timeline:** each shot is a block; drag its left/right edge to trim, click to edit
+- Edit start/end/speed numerically, delete a shot, preview its source clip
+- Trimming automatically keeps the music drop aligned with the money shot
+- Render buttons call the same engine as the agent (music/format/output selectable)
 
 ## Your workflow
 
