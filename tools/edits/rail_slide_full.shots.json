@@ -54,9 +54,16 @@
     {
       "clip": "clips/IMG_3730.MP4",
       "start": 125.0,
-      "end": 136.0,
+      "end": 131.0,
       "speed": 1.0,
       "note": "calm - green hills"
+    },
+    {
+      "clip": "clips/Untitled video (2).mp4",
+      "start": 0.0,
+      "end": 5.0,
+      "speed": 1.0,
+      "note": "ad - North Edge Watches (vertical)"
     },
     {
       "kind": "texture",

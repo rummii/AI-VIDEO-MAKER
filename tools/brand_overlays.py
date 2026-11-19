@@ -6,7 +6,7 @@ All design constants come from branding/brand.json (site colors, fonts,
 taglines) so every render is consistently on-brand.
 """
 import json, os
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -53,6 +53,32 @@ def _word_png(text, W, H, brand, accent=True, sub=None):
         d.text(((W - (sb[2] - sb[0])) // 2, y + tmp[3] - tmp[1] + _scaled(24, 24, W)),
                sub, font=body, fill=col)
     return img
+
+def _image_png(W, H, path):
+    """Fit an external image (sponsor/ad card) to a 9:16 frame.
+
+    The ad is shown in full (centered, no cropping so its text stays readable)
+    over a blurred, darkened copy of itself that fills the rest of the frame.
+    """
+    img = Image.open(path).convert("RGBA")
+    # blurred cover background
+    bg = img.copy()
+    scale = max(W / bg.width, H / bg.height)
+    bg = bg.resize((int(bg.width * scale) + 1, int(bg.height * scale) + 1), Image.LANCZOS)
+    x0, y0 = (bg.width - W) // 2, (bg.height - H) // 2
+    bg = bg.crop((x0, y0, x0 + W, y0 + H))
+    bg = bg.filter(ImageFilter.GaussianBlur(50))
+    bg = ImageEnhance.Brightness(bg).enhance(0.35)
+    # foreground: full ad, scaled to frame width
+    fg = img.copy()
+    fw = int(W * 0.94)
+    fg = fg.resize((fw, int(fg.height * fw / fg.width)), Image.LANCZOS)
+    if fg.height > H:
+        fh = int(H * 0.94)
+        fg = fg.resize((int(fg.width * fh / fg.height), fh), Image.LANCZOS)
+    bg.alpha_composite(fg, ((W - fg.width) // 2, (H - fg.height) // 2))
+    return bg
+
 
 def _intro_png(W, H, brand):
     """Intro: centered logo + ///UNLEASH YOUR SPIRIT."""
@@ -273,6 +299,11 @@ def build_overlay_plan(project, shots, total, W, H, spec=None, sponsors=None):
             png = _outro_url_png(W, H, brand)
         elif kind == "outro":
             png = _outro_png(W, H, brand)
+        elif kind == "ad":
+            f = o.get("file")
+            if not os.path.isabs(f):
+                f = os.path.join(ROOT, f)
+            png = _image_png(W, H, f)
         else:
             png = _word_png(o.get("text", "ADRENALINE"), W, H, brand, sub=o.get("sub"))
         path = os.path.join(odir, f"ov_{k}_{kind}_{W}x{H}.png")
