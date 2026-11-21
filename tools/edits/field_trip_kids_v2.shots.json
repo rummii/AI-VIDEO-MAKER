@@ -1,0 +1,229 @@
+{
+  "name": "field_trip_kids_v2",
+  "style": "fun",
+  "music_start": 0.0,
+  "notes": "PERSONAL - no branding. 9-12 field trip: zipline + theme park + water park + balloon. All scenes hand-picked.",
+  "shots": [
+    {
+      "clip": "footage/IMG_6561.MOV",
+      "start": 4.692,
+      "end": 10.692,
+      "speed": 1.0,
+      "note": "water"
+    },
+    {
+      "clip": "footage/IMG_6652.MOV",
+      "start": 17.333,
+      "end": 23.333,
+      "speed": 1.0,
+      "note": "balloon"
+    },
+    {
+      "clip": "footage/IMG_6619.MOV",
+      "start": 1.6,
+      "end": 6.6,
+      "speed": 1.0,
+      "note": "balloon2"
+    },
+    {
+      "clip": "footage/video_20261120_101707.mp4",
+      "start": 9.324,
+      "end": 17.324,
+      "speed": 1.0,
+      "note": "temple"
+    },
+    {
+      "clip": "footage/video_20261120_101707.mp4",
+      "start": 22.378,
+      "end": 29.378,
+      "speed": 1.0,
+      "note": "temple"
+    },
+    {
+      "clip": "footage/video_20261120_101906.mp4",
+      "start": 4.543,
+      "end": 10.543,
+      "speed": 1.0,
+      "note": "hut"
+    },
+    {
+      "clip": "footage/video_20261120_101929.mp4",
+      "start": 15.057,
+      "end": 22.057,
+      "speed": 1.0,
+      "note": "garden"
+    },
+    {
+      "clip": "footage/video_20261120_102034.mp4",
+      "start": 8.472,
+      "end": 17.472,
+      "speed": 1.0,
+      "note": "tortoise"
+    },
+    {
+      "clip": "footage/video_20261120_102034.mp4",
+      "start": 18.356,
+      "end": 25.356,
+      "speed": 1.0,
+      "note": "tortoise"
+    },
+    {
+      "clip": "footage/video_20261120_102136.mp4",
+      "start": 2.353,
+      "end": 7.353,
+      "speed": 1.0,
+      "note": "path"
+    },
+    {
+      "clip": "footage/video_20261120_102204.mp4",
+      "start": 16.205,
+      "end": 23.205,
+      "speed": 1.0,
+      "note": "picnic"
+    },
+    {
+      "clip": "footage/video_20261120_102743.mp4",
+      "start": 3.57,
+      "end": 9.57,
+      "speed": 1.0,
+      "note": "kids"
+    },
+    {
+      "clip": "footage/video_20261120_102957.mp4",
+      "start": 5.855,
+      "end": 12.855,
+      "speed": 1.0,
+      "note": "slide"
+    },
+    {
+      "clip": "footage/video_20261120_103122.mp4",
+      "start": -0.226,
+      "end": 4.774,
+      "speed": 1.0,
+      "note": "bridge"
+    },
+    {
+      "clip": "footage/video_20261120_103955.mp4",
+      "start": 4.512,
+      "end": 11.512,
+      "speed": 1.0,
+      "note": "bikes"
+    },
+    {
+      "clip": "footage/video_20261120_104254.mp4",
+      "start": 6.953,
+      "end": 12.953,
+      "speed": 1.0,
+      "note": "rest"
+    },
+    {
+      "clip": "footage/video_20261120_110758.mp4",
+      "start": 18.226,
+      "end": 28.226,
+      "speed": 1.0,
+      "note": "zipline"
+    },
+    {
+      "clip": "footage/video_20261120_110758.mp4",
+      "start": 50.629,
+      "end": 58.104,
+      "speed": 1.0,
+      "note": "zipline"
+    },
+    {
+      "clip": "footage/video_20261120_110941.mp4",
+      "start": 1.652,
+      "end": 6.652,
+      "speed": 1.0,
+      "note": "zipline2"
+    },
+    {
+      "clip": "footage/video_20261120_154504.mp4",
+      "start": 15.359,
+      "end": 20.359,
+      "speed": 1.0,
+      "note": "car"
+    },
+    {
+      "clip": "footage/video_20261120_154726.mp4",
+      "start": -2.654,
+      "end": 3.346,
+      "speed": 1.0,
+      "note": "ferris"
+    },
+    {
+      "clip": "footage/video_20261120_154743.mp4",
+      "start": 5.919,
+      "end": 11.919,
+      "speed": 1.0,
+      "note": "rideface"
+    },
+    {
+      "clip": "footage/video_20261120_154851.mp4",
+      "start": -0.301,
+      "end": 6.699,
+      "speed": 1.0,
+      "note": "ropes"
+    },
+    {
+      "clip": "footage/video_20261120_154901.mp4",
+      "start": 3.955,
+      "end": 10.78,
+      "speed": 1.0,
+      "note": "ropes2"
+    },
+    {
+      "clip": "footage/video_20261120_154928.mp4",
+      "start": -0.24,
+      "end": 6.76,
+      "speed": 1.0,
+      "note": "ridecycle"
+    },
+    {
+      "clip": "footage/video_20261120_155134.mp4",
+      "start": 1.0,
+      "end": 10.5,
+      "speed": 1.0,
+      "note": "fly"
+    },
+    {
+      "clip": "footage/video_20261120_110758.mp4",
+      "start": 70.0,
+      "end": 79.5,
+      "speed": 1.0,
+      "note": "finale zipline"
+    }
+  ],
+  "overlays": [
+    {
+      "file": "assets/kids_cards/trip_title.png",
+      "start": 0.4,
+      "end": 3.2
+    },
+    {
+      "file": "assets/kids_cards/trip_water.png",
+      "start": 16.0,
+      "end": 18.5
+    },
+    {
+      "file": "assets/kids_cards/trip_zipline.png",
+      "start": 98.0,
+      "end": 101.0
+    },
+    {
+      "file": "assets/kids_cards/trip_park.png",
+      "start": 130.0,
+      "end": 133.0
+    },
+    {
+      "file": "assets/kids_cards/trip_gofaster.png",
+      "start": 150.0,
+      "end": 153.0
+    },
+    {
+      "file": "assets/kids_cards/trip_end.png",
+      "start": 178.8,
+      "end": 183.3
+    }
+  ]
+}
