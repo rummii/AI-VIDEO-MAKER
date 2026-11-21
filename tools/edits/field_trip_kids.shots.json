@@ -1,0 +1,156 @@
+{
+  "name": "field_trip_kids",
+  "style": "fun",
+  "music_start": 0.0,
+  "notes": "PERSONAL VIDEO - no branding. Kids field trip: temple, tortoises, zipline, beach, balloon. Full song Playground Fun.",
+  "shots": [
+    {
+      "clip": "footage/video_20261120_101707.mp4",
+      "start": 4.476,
+      "end": 14.476,
+      "speed": 1.0,
+      "note": "0_101707"
+    },
+    {
+      "clip": "footage/video_20261120_101814.mp4",
+      "start": 5.591,
+      "end": 15.591,
+      "speed": 1.0,
+      "note": "0_101814"
+    },
+    {
+      "clip": "footage/video_20261120_101906.mp4",
+      "start": 1.817,
+      "end": 11.817,
+      "speed": 1.0,
+      "note": "0_101906"
+    },
+    {
+      "clip": "footage/video_20261120_101929.mp4",
+      "start": 5.162,
+      "end": 15.162,
+      "speed": 1.0,
+      "note": "0_101929"
+    },
+    {
+      "clip": "footage/video_20261120_102034.mp4",
+      "start": 3.389,
+      "end": 13.389,
+      "speed": 1.0,
+      "note": "0_102034"
+    },
+    {
+      "clip": "footage/video_20261120_102114.mp4",
+      "start": 2.272,
+      "end": 12.272,
+      "speed": 1.0,
+      "note": "0_102114"
+    },
+    {
+      "clip": "footage/video_20261120_102136.mp4",
+      "start": 1.0,
+      "end": 6.553,
+      "speed": 1.0,
+      "note": "0_102136"
+    },
+    {
+      "clip": "footage/video_20261120_102204.mp4",
+      "start": 7.779,
+      "end": 17.779,
+      "speed": 1.0,
+      "note": "0_102204"
+    },
+    {
+      "clip": "footage/video_20261120_102321.mp4",
+      "start": 3.501,
+      "end": 13.501,
+      "speed": 1.0,
+      "note": "0_102321"
+    },
+    {
+      "clip": "footage/video_20261120_102424.mp4",
+      "start": 2.001,
+      "end": 12.001,
+      "speed": 1.0,
+      "note": "0_102424"
+    },
+    {
+      "clip": "footage/video_20261120_102451.mp4",
+      "start": 1.313,
+      "end": 10.251,
+      "speed": 1.0,
+      "note": "0_102451"
+    },
+    {
+      "clip": "footage/video_20261120_102515.mp4",
+      "start": 2.764,
+      "end": 12.764,
+      "speed": 1.0,
+      "note": "0_102515"
+    },
+    {
+      "clip": "footage/video_20261120_102715.mp4",
+      "start": 1.428,
+      "end": 11.327,
+      "speed": 1.0,
+      "note": "0_102715"
+    },
+    {
+      "clip": "footage/video_20261120_102743.mp4",
+      "start": 1.428,
+      "end": 11.328,
+      "speed": 1.0,
+      "note": "0_102743"
+    },
+    {
+      "clip": "footage/video_20261120_102957.mp4",
+      "start": 2.007,
+      "end": 12.007,
+      "speed": 1.0,
+      "note": "0_102957"
+    },
+    {
+      "clip": "footage/video_20261120_103955.mp4",
+      "start": 1.805,
+      "end": 11.805,
+      "speed": 1.0,
+      "note": "0_103955"
+    },
+    {
+      "clip": "footage/video_20261120_104254.mp4",
+      "start": 2.384,
+      "end": 12.384,
+      "speed": 1.0,
+      "note": "0_104254"
+    },
+    {
+      "clip": "footage/video_20261120_110758.mp4",
+      "start": 12.151,
+      "end": 29.71,
+      "speed": 1.0,
+      "note": "0_110758"
+    }
+  ],
+  "overlays": [
+    {
+      "file": "assets/kids_cards/kids_title.png",
+      "start": 0.4,
+      "end": 3.0
+    },
+    {
+      "file": "assets/kids_cards/kids_wow.png",
+      "start": 62.0,
+      "end": 65.0
+    },
+    {
+      "file": "assets/kids_cards/kids_fun.png",
+      "start": 118.0,
+      "end": 121.0
+    },
+    {
+      "file": "assets/kids_cards/kids_end.png",
+      "start": 177.35,
+      "end": 181.85
+    }
+  ]
+}

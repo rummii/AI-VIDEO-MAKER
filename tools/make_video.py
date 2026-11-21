@@ -281,6 +281,25 @@ def cmd_build(args):
             overlays = brand_overlays.build_overlay_plan(
                 project, shots, total, w, h, shots_doc.get("overlays"),
                 sponsors=sponsor_files)
+        elif shots_doc.get("overlays"):
+            # --nobrand: still allow plain image cards supplied by the plan
+            ovdir = os.path.join(ROOT, "tools", "overlays", project)
+            os.makedirs(ovdir, exist_ok=True)
+            overlays = []
+            for j, o in enumerate(shots_doc["overlays"]):
+                f = o.get("file")
+                if not f:
+                    continue
+                f = f if os.path.isabs(f) else os.path.join(ROOT, f)
+                if not os.path.exists(f):
+                    continue
+                from PIL import Image as _Image
+                img = _Image.open(f).convert("RGBA")
+                img = img.resize((w, h), _Image.LANCZOS)
+                p = os.path.join(ovdir, f"card_{j}_{w}x{h}.png")
+                img.save(p)
+                overlays.append({"png": p, "start": float(o["start"]),
+                                 "end": float(o["end"]), "mode": "full"})
         # SFX inserts: shots.json "sfx" -> [{file, start, gain_db?}]
         sfx_list = shots_doc.get("sfx", [])
         resolved_sfx = []
